@@ -6,7 +6,7 @@ namespace Game.GameLogic
 {
     public class Plant : ReadOnlyPlant, ITickHandler<int>, ITickHandler
     {
-        public Plant(int capacity, int stock, int growPerTick, HexValue<bool> movePosible) : base(capacity, stock, growPerTick, movePosible)
+        public Plant(int capacity, int stock, int growPerTick, HexValue<bool>? movePosible = null) : base(capacity, stock, growPerTick, movePosible)
         {
         }
 
@@ -52,13 +52,16 @@ namespace Game.GameLogic
 
         public int GrowPerTick { get; private set; }
 
-        public ReadOnlyPlant(int capacity, int stock, int growPerTick, HexValue<bool> movePosible)
+        public ReadOnlyPlant(int capacity, int stock, int growPerTick, HexValue<bool>? movePosible = null)
         {
             if (capacity < 0 || stock < 0 || growPerTick < 0)
                 throw new ArgumentException();
 
             if (capacity < stock)
                 throw new ArgumentException();
+
+            if (movePosible == null)
+                movePosible = new HexValue<bool>(false, false, false, false, false, false);
 
             _movePossible = movePosible.Clone();
 

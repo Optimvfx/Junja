@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -6,7 +7,6 @@ namespace Game.GameLogic.Edit
     [CreateAssetMenu(menuName = "ScriptableObjects/Tile/HexTiles/PlantTile")]
     public class PlantTile : Tile
     {
-        [SerializeField] private HexDirection.MultiDirection _movePosibles;
         [Range(0, 1000)]
         [SerializeField] private int _capacity;
         [Range(0, 1000)]
@@ -21,7 +21,7 @@ namespace Game.GameLogic.Edit
 
         public Plant GeneratePlant()
         {
-            return new Plant(_capacity, _stock, _growPerTick, HexDirection.MultiDirectionToMovePosible(_movePosibles));
+            return new Plant(_capacity, _stock, _growPerTick);
         }
     }
 }

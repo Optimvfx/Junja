@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c16a0fe8f3a2af42b23c7edbf21267c, type: 3}
-  m_Name: New Plant Tile
+  m_Name: HexEditNoDefNoValue
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1756740186, guid: 90b420ba342ca5d46b8127441d1cf5ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  movePosibles: 58
+  _movePosibles: 0
   _capacity: 524
   _stock: 434
   _growPerTick: 0

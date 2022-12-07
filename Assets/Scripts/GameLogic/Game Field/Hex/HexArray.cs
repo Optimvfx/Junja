@@ -8,58 +8,65 @@ namespace Game.GameLogic
 {
     public class HexArray<T> : IReadOnlyHexArray<T>, IClonable<HexArray<T>>
     {
-        public const int AxisRArrayDimension = 0;
-        public const int AxisSArrayDimension = 1;
-        public const int AxisQArrayDimension = 2;
+        public const int AxisXArrayDimension = 0;
+        public const int AxisYArrayDimension = 1;
 
-        private T[,,] _array;
+        private readonly IHexPositionToCellPositionConvertor _hexPositionToCellPositionConvertor;
 
-        public int SizeR => _array.GetLength(AxisRArrayDimension);
-        public int SizeS => _array.GetLength(AxisSArrayDimension);
-        public int SizeQ => _array.GetLength(AxisQArrayDimension);
+        private T[,] _array;
 
-        public HexArray(HexVectorInt size)
+        public int SizeR => GetSize().R;
+        public int SizeS => GetSize().S;
+        public int SizeQ => GetSize().Q;
+
+        public int SizeX => _array.GetLength(AxisXArrayDimension);
+        public int SizeY => _array.GetLength(AxisYArrayDimension);
+      
+
+        public HexArray(HexVectorInt size, IHexPositionToCellPositionConvertor hexPositionToCellPositionConvetor)
         {
-            if (size.R < 0 || size.S < 0 || size.Q < 0)
-                throw new ArgumentException();
+            _hexPositionToCellPositionConvertor = hexPositionToCellPositionConvetor;
 
-            _array = new T[size.R, size.S, size.Q];
+            Init(size);
         }
 
-        public HexArray(int r, int s, int q)
+        public HexArray(int r, int s, int q, IHexPositionToCellPositionConvertor hexPositionToCellPositionConvetor)
         {
-            if (r < 0 || s < 0 || q < 0)
-                throw new ArgumentException();
+            _hexPositionToCellPositionConvertor = hexPositionToCellPositionConvetor;
 
-            _array = new T[r, s, q];
+            Init(new HexVectorInt(r, s, q));
         }
 
         public void Set(HexVectorInt index, T value)
         {
-            if (!InBounds(index.R, index.S, index.Q))
-                throw GetOutOfBoundsException(index.R, index.S, index.Q);
+            if (!InBounds(index))
+                throw GetOutOfBoundsException(index);
 
-            _array[index.R, index.S, index.Q] = value;
+            var cellPosition = _hexPositionToCellPositionConvertor.HexToCell(index);
+
+            _array[cellPosition.x, cellPosition.y] = value;
         }
 
         public T Get(HexVectorInt index)
         {
-            if (!InBounds(index.R, index.S, index.Q))
-                throw GetOutOfBoundsException(index.R, index.S, index.Q);
+            if (!InBounds(index))
+                throw GetOutOfBoundsException(index);
 
-            return _array[index.R, index.S, index.Q];
-        }
+            var cellPosition = _hexPositionToCellPositionConvertor.HexToCell(index);
 
-        public bool InBounds(HexVectorInt vector)
-        {
-            return InBounds(vector.R, vector.S, vector.Q);
+            return _array[cellPosition.x, cellPosition.y];
         }
 
         public bool InBounds(int r, int s, int q)
         {
-            return MathExtenstions.InBounds(r, 0, SizeR)
-                   && MathExtenstions.InBounds(s, 0, SizeS)
-                   && MathExtenstions.InBounds(q, 0, SizeQ);
+            return InBounds(new HexVectorInt(r, s, q));
+        }
+
+        public bool InBounds(HexVectorInt vector)
+        {
+            var cellPosition = _hexPositionToCellPositionConvertor.HexToCell(vector);
+
+            return cellPosition.x >= 0 && cellPosition.y >= 0 && cellPosition.x < SizeX && cellPosition.y < SizeY;
         }
 
         public IEnumerable<HexCell<T>> GetAllCells()
@@ -80,7 +87,7 @@ namespace Game.GameLogic
 
         public HexArray<T> Clone()
         {
-            var clone = new HexArray<T>(SizeR, SizeS, SizeQ);
+            var clone = new HexArray<T>(SizeR, SizeS, SizeQ, _hexPositionToCellPositionConvertor);
 
             foreach(var cell in GetAllCells())
             {
@@ -90,31 +97,40 @@ namespace Game.GameLogic
             return clone;
         }
 
-        private Exception GetOutOfBoundsException(int r, int s, int q)
+        public HexVectorInt GetSize()
         {
-            return new IndexOutOfRangeException($"R: {r}, S: {s}, Q: {q}. \n  Size: R: {SizeR}, S: {SizeS}, Q: {SizeQ}.");
+            return _hexPositionToCellPositionConvertor.CellToHex(new Vector2Int(SizeX, SizeY));
         }
 
+        private Exception GetOutOfBoundsException(HexVectorInt vector)
+        {
+            var cellIndex = _hexPositionToCellPositionConvertor.HexToCell(vector);
+
+            return new IndexOutOfRangeException($"R: {vector.R}, S: {vector.S}, Q: {vector.Q}. Vector: {cellIndex}  \n  Size: R: {SizeR}, S: {SizeS}, Q: {SizeQ} X: {SizeX} Y: {SizeY}.");
+        }
+
+        private void Init(HexVectorInt size)
+        {
+            var vector2Size = _hexPositionToCellPositionConvertor.HexToCell(size);
+
+            if (vector2Size.x < 0 || vector2Size.y < 0)
+                throw new ArgumentException();
+
+            _array = new T[vector2Size.x, vector2Size.y];
+        }
+    }
+
+    public interface IHexPositionToCellPositionConvertor
+    {
+        HexVectorInt CellToHex(Vector2Int cellPosition);
+
+        Vector2Int HexToCell(HexVectorInt hexPosition);
     }
 
     public interface IReadOnlyHexArray<T>
     {
-        public int SizeR { get; }
-        public int SizeS { get; }
-        public int SizeQ { get; }
+        HexVectorInt GetSize();
 
         public T Get(HexVectorInt index);
-    }
-
-    public struct HexCell<T>
-    {
-        public readonly HexVectorInt Position;
-        public readonly T Value;
-
-        public HexCell(HexVectorInt position, T value)
-        {
-            Position = position;
-            Value = value;
-        }
     }
 }

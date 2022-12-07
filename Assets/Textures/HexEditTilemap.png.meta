@@ -1,0 +1,1719 @@
+fileFormatVersion: 2
+guid: 90b420ba342ca5d46b8127441d1cf5ba
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HexEditTilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2844
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a167580f3dade68499902a95ed4eaf76
+      internalID: 1756740186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2844
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ae825f5c561b649a403a9aee8974b6
+      internalID: -1163581836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2844
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2cff7ca1014b64c8b95406d06a6786
+      internalID: 1906037768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2844
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774479eada8df0346834eab274ad1b34
+      internalID: 677412879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2844
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c24654458c6acd4086198fb2f9ca0ef
+      internalID: -1714419535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2844
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1f94f0481210f489acbbc2449870b6
+      internalID: 617369604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2588
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3df2efa51f344047a6a4af6f67b7997
+      internalID: 146172816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2588
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9401c1a3ac023644aa283edee8c0a823
+      internalID: 1873186315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2588
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8583e12ea058cd4fa831d96e9be3297
+      internalID: -412759174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2588
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbb3947256852146b11ac58b53f5c43
+      internalID: 567515511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2588
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d888caa4c5d34c8439e849564c52fca2
+      internalID: -1730719170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_11
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2588
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad2d5853ce4cd04884583752ae79bee
+      internalID: -1177641550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2332
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c419a3b73c82c54a9aeb35f4059caf1
+      internalID: -939582095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2332
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae3571678f4a6d448a00a0516e5a162
+      internalID: 1179899843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2332
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f1de57e6c508e4ca9f727480f976ed
+      internalID: -2091356380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2332
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd2c7fa5235c8d4ebf0415104659881
+      internalID: 1997096484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2332
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22a59039cf1c1d4e969e9f0f27ab50d
+      internalID: -1591347037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2332
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe9d429e17808040896adbc119ae0cd
+      internalID: -1456368872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2076
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73906b3e9315d945b4b292c60793e8e
+      internalID: -263768624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2076
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fcc620c1b656442a9f81c1891e6861
+      internalID: 1520731699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2076
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdc30fdbc046cd428468c014532d098
+      internalID: -1117156799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2076
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d64c427176dc647b8e6500d7cdc3c1
+      internalID: -2125226136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2076
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12115eac812db347bedaf7f5ace0544
+      internalID: -1406130011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2076
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a104fc449bbb24d9ee6b979c022daa
+      internalID: 987687992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1820
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e6be384fcf48343b4fc01470e93c8b
+      internalID: 888787333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1820
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368024d3b6433784d91447d92f64c231
+      internalID: -779276385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1820
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb1b76f592dc684fbf8aa1b2f44c66f
+      internalID: -738232704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1820
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e999d70a9859e42920e44f8ae25100
+      internalID: 2146379973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1820
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1be7832fb72914f9d098b511c0e703
+      internalID: 974827914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1820
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fb7047305776e4bb4053a813ccb079
+      internalID: 1157555166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1564
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2947fa7186f4ec24a8ddf8882fe4c8ca
+      internalID: -1638756702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1564
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e159f096f34c29a469384a36ad50187b
+      internalID: 1191968141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1564
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fd3b691b139ec4e8b0d00b5a059596
+      internalID: -212172984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1564
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e618ac961d97bfe45bd01c12e8df9635
+      internalID: 157982552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_34
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1564
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f3428f8526496489e9b3ad43854518
+      internalID: 1010466884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_35
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1564
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69caa9960f2690242acea6337bca6574
+      internalID: -2136131565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1308
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d02aee424673448a443f335a590a1a
+      internalID: 373569207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1308
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f733ddb78e70c749a79224098452485
+      internalID: -1023152002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_38
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1308
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7ba841a5732d0469c39b042b78f28c
+      internalID: -1991084938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_39
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1308
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22774e87a7f4d994e8f2a8da1830fff4
+      internalID: -1391430281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_40
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1308
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917d12afa75a70941a771a8e6ebd3fff
+      internalID: 1044527756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_41
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1308
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd39de1f1d01db4c92c29afe3375379
+      internalID: -1613499556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1052
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cd487eb1df7014eb4a4aaa8d59121f
+      internalID: -752828730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1052
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bd811e78654864f89cc2294ad89f2b
+      internalID: -2062699913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1052
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13908891aded7d64f8e26eefb9dec38f
+      internalID: 1805655039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_45
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1052
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e272f975d68ffce4aa261a94d8017a1c
+      internalID: 1714306524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_46
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1052
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fee8a41ca70b347b514423f90e8356
+      internalID: -1766346638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_47
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1052
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa006410118487347ba8891396f0a705
+      internalID: 1294500272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 796
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6befb2221ac4fdd45a2b350e627d3b4d
+      internalID: 1446700184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 796
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81175ca3630883c43acd2803ebbacbe4
+      internalID: 1145601071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 796
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e9fb9dd1ce7e94189584b5b752fc33
+      internalID: -752163335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 796
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec544bc6c5fb9cc47b3e7c0c55b20618
+      internalID: 202570052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 796
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b59c2272010484797ecccfcc1af14e
+      internalID: 1103435030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_53
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 796
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4240cab000cb35a45b609949f3dde91f
+      internalID: -809648894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ddae325ae077c488cc829e63711271
+      internalID: -563751737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 540
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd2145f39556bb47a9362d964766a94
+      internalID: -2002543501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 540
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460604ea48e8a6a4e9050e4d0ab0a2b8
+      internalID: 878752982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 540
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ba54d8afb8196448f6b1fb21790ff6
+      internalID: 1754179281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_58
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 540
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d21eb5b921f004c8905496a2cfb2cf
+      internalID: -736798414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_59
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 540
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc595e5aa1db95d4ea57beb08a8d8230
+      internalID: -1062969848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebff4542e948c414ab0087f65b6906eb
+      internalID: 931695695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_61
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 284
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932fe07641720cf4db06c430a2bba956
+      internalID: 1764076970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_62
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 284
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42427a73064857249a7e657cc903bbaf
+      internalID: 719995701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_63
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 284
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85af730c1966f7241b744b7c92672975
+      internalID: -323551811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_64
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 284
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75db461fd8d7d414caf1b98a84391a1c
+      internalID: -1851639854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_65
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 284
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b04b6a702c0894fa3b288df7c4221c
+      internalID: -256509324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c94d7effab6ae04383fd6bd5b5b0ddd
+      internalID: 1209130751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafcc98be1ab9ab46ab088c5a02e747c
+      internalID: 1693511996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 28
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c200d44d752f6b4ab99b546413b918c
+      internalID: 1551910301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_69
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 28
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e00fd3bef27c54aac88b3ef695e08f
+      internalID: -202823655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_70
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 28
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b206e98d9d5ee4c429d210ed9b1d4061
+      internalID: -702602555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HexEditTilemap_71
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 28
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d184f55873c007346bce0a7aaaa63e22
+      internalID: -488267158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HexEditTilemap_9: 567515511
+      HexEditTilemap_57: 1754179281
+      HexEditTilemap_25: -779276385
+      HexEditTilemap_71: -488267158
+      HexEditTilemap_37: -1023152002
+      HexEditTilemap_56: 878752982
+      HexEditTilemap_8: -412759174
+      HexEditTilemap_52: 1103435030
+      HexEditTilemap_38: -1991084938
+      HexEditTilemap_22: -1406130011
+      HexEditTilemap_32: -212172984
+      HexEditTilemap_27: 2146379973
+      HexEditTilemap_5: 617369604
+      HexEditTilemap_69: -202823655
+      HexEditTilemap_61: 1764076970
+      HexEditTilemap_35: -2136131565
+      HexEditTilemap_24: 888787333
+      HexEditTilemap_2: 1906037768
+      HexEditTilemap_48: 1446700184
+      HexEditTilemap_44: 1805655039
+      HexEditTilemap_68: 1551910301
+      HexEditTilemap_33: 157982552
+      HexEditTilemap_46: -1766346638
+      HexEditTilemap_23: 987687992
+      HexEditTilemap_54: -563751737
+      HexEditTilemap_31: 1191968141
+      HexEditTilemap_66: 1209130751
+      HexEditTilemap_1: -1163581836
+      HexEditTilemap_10: -1730719170
+      HexEditTilemap_42: -752828730
+      HexEditTilemap_55: -2002543501
+      HexEditTilemap_53: -809648894
+      HexEditTilemap_7: 1873186315
+      HexEditTilemap_47: 1294500272
+      HexEditTilemap_60: 931695695
+      HexEditTilemap_49: 1145601071
+      HexEditTilemap_62: 719995701
+      HexEditTilemap_59: -1062969848
+      HexEditTilemap_13: 1179899843
+      HexEditTilemap_14: -2091356380
+      HexEditTilemap_34: 1010466884
+      HexEditTilemap_36: 373569207
+      HexEditTilemap_40: 1044527756
+      HexEditTilemap_51: 202570052
+      HexEditTilemap_43: -2062699913
+      HexEditTilemap_50: -752163335
+      HexEditTilemap_58: -736798414
+      HexEditTilemap_11: -1177641550
+      HexEditTilemap_4: -1714419535
+      HexEditTilemap_17: -1456368872
+      HexEditTilemap_19: 1520731699
+      HexEditTilemap_12: -939582095
+      HexEditTilemap_21: -2125226136
+      HexEditTilemap_45: 1714306524
+      HexEditTilemap_39: -1391430281
+      HexEditTilemap_65: -256509324
+      HexEditTilemap_3: 677412879
+      HexEditTilemap_64: -1851639854
+      HexEditTilemap_0: 1756740186
+      HexEditTilemap_6: 146172816
+      HexEditTilemap_70: -702602555
+      HexEditTilemap_28: 974827914
+      HexEditTilemap_41: -1613499556
+      HexEditTilemap_29: 1157555166
+      HexEditTilemap_20: -1117156799
+      HexEditTilemap_67: 1693511996
+      HexEditTilemap_26: -738232704
+      HexEditTilemap_63: -323551811
+      HexEditTilemap_18: -263768624
+      HexEditTilemap_16: -1591347037
+      HexEditTilemap_30: -1638756702
+      HexEditTilemap_15: 1997096484
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

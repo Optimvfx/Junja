@@ -1,3 +1,4 @@
+using Game.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,19 @@ namespace Game.GameLogic
     {
         private static readonly IReadOnlyDictionary<Direction, Direction> _directionFlipConvertor = GenerateDirectionFlipConvetor();
         private static readonly IReadOnlyDictionary<Direction, HexVectorInt> _directionToVectorConvertor = GenerateDirectionToVectorConvetor();
+
+        public static int DirectionCount
+        {
+            get
+            {
+                if (_directionCount == null)
+                    _directionCount = Enum.GetValues(typeof(Direction)).Length;
+
+                return _directionCount.Value;
+            }
+        }
+
+        private static int? _directionCount;
 
         public static Direction Flip(Direction direction)
         {

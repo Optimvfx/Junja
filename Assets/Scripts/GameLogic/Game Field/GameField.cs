@@ -37,16 +37,21 @@ namespace Game.GameLogic
 
         public int SizeQ => _field.SizeQ;
 
-        public ReadOnlyPlant Get(HexVectorInt index)
-        {
-            return _field.Get(index);
-        }
-
         public ReadOnlyGameField(HexArray<Plant> field)
         {
             _field = field.Clone();
 
             RecalculatePosibleMoves();
+        }
+
+        public ReadOnlyPlant Get(HexVectorInt index)
+        {
+            return _field.Get(index);
+        }
+
+        public HexVectorInt GetSize()
+        {
+            return _field.GetSize();
         }
 
         protected bool TryAttack(HexVectorInt attackerPosition, HexDirection.Direction attackDirection)
