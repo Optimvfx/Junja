@@ -39,6 +39,11 @@ namespace Game.GameLogic
             GetTileMap().SetTile((Vector3Int)HexPositionToTilePosition(position), tile);
         }
 
+        public void Set(Tile tile, Vector2Int position)
+        {
+            GetTileMap().SetTile((Vector3Int)position, tile);
+        }
+
         public Tile Get(HexVectorInt position)
         {
             return Get<Tile>(position);
@@ -50,7 +55,12 @@ namespace Game.GameLogic
             return GetTileMap().GetTile<T>((Vector3Int)HexPositionToTilePosition(position));
         }
 
-        public IEnumerable<HexCell<T>> GetAllTiles<T>()
+        public IEnumerable<HexCell<Tile>> GetAllCells()
+        {
+            return GetAllCells<Tile>();
+        }
+
+        public IEnumerable<HexCell<T>> GetAllCells<T>()
            where T : Tile
         {
             var tileMapSize = GetAllTileBounds();
@@ -65,6 +75,11 @@ namespace Game.GameLogic
                     yield return new HexCell<T>(hexPosition, tile);
                 }
             }
+        }
+
+        public void ClearAtPoint(HexVectorInt point)
+        {
+            GetTileMap().SetTile((Vector3Int)HexPositionToTilePosition(point), null);
         }
 
         public void Clear()

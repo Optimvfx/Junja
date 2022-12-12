@@ -19,7 +19,7 @@ namespace Game.GameLogic.Edit
 
             var hexSize = _lvlEditMap.GetSize();
 
-            var plantCells = _lvlEditMap.GetAllTiles<PlantTile>();
+            var plantCells = _lvlEditMap.GetAllCells<PlantTile>();
 
             var hexArray = new HexArray<PlantTile>(hexSize, new HexTilemap.TilemapHexPositionToCellPositionConvertor());
             var hexArrayOffset = hexBounds.Min;

@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace Game.GameLogic
 {
-    public struct HexVectorInt
+    [System.Serializable]
+    public struct HexVectorInt : ISerializationCallbackReceiver
     {
         public static HexVectorInt Zero => new HexVectorInt(0, 0, 0);
 
@@ -63,6 +64,18 @@ namespace Game.GameLogic
         public override string ToString()
         {
             return $"{{ {_r} : {_s} : {_q} }}";
+        }
+
+        public void OnBeforeSerialize()
+        {
+            if (IsValid(R, S, Q) == false)
+                throw new InvalidOperationException();
+        }
+
+        public void OnAfterDeserialize()
+        {
+            if (IsValid(R, S, Q) == false)
+                throw new InvalidOperationException();
         }
     }
 }

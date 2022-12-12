@@ -8,26 +8,33 @@ namespace Game.GameLogic.Edit
     {
         [SerializeField] private string _newLvlName;
 
-        private HexArray<PlantTile> _tileArray;
+        [SerializeField] private Vector2Int _offsetToTilemap;
 
-        public HexVectorInt _offsetToTileMap { get; private set; }
+        [SerializeField] private HexCell<PlantTile>[] _gameCells;
+
+        public HexVectorInt OffsetToTilemap => HexTilemap.TilePositionToHexPosition(_offsetToTilemap);
 
         public string NewLvlName => _newLvlName;
 
         public GameLvlInfo(HexArray<PlantTile> tileArray, HexVectorInt offsetToTileMap, string newLvlName)
         {
-            _tileArray = tileArray.Clone();
+            _gameCells = tileArray.GetAllCells().Where(tile => tile.Value != null).ToArray();
 
-            _offsetToTileMap = offsetToTileMap;
+            _offsetToTilemap = HexTilemap.HexPositionToTilePosition(offsetToTileMap);
 
             _newLvlName = newLvlName;
         }
 
         public GameField GenerateGameField()
         {
-            var gameFieldHexArray = new HexArray<Plant>(_tileArray.GetSize(), new HexTilemap.TilemapHexPositionToCellPositionConvertor());
+            var notEmptyGameCells = _gameCells.Where(tile => tile.Value != null);
 
-            foreach(var cell in _tileArray.GetAllCells().Where(cell => cell.Value != null))
+            var hexArraySizeX = _gameCells.Max(cell => HexTilemap.HexPositionToTilePosition(cell.Position).x) + 1;
+            var hexArraySizeY = _gameCells.Max(cell => HexTilemap.HexPositionToTilePosition(cell.Position).y) + 1;
+
+            var gameFieldHexArray = new HexArray<Plant>(new Vector2Int(hexArraySizeX, hexArraySizeY), new HexTilemap.TilemapHexPositionToCellPositionConvertor());
+
+            foreach (var cell in notEmptyGameCells)
             {
                 gameFieldHexArray.Set(cell.Position, cell.Value.GeneratePlant());
             }

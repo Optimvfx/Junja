@@ -1,40 +1,56 @@
 using Game.Core;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.GameLogic
 {
+    [System.Serializable]
     public class HexArray<T> : IReadOnlyHexArray<T>, IClonable<HexArray<T>>
     {
         public const int AxisXArrayDimension = 0;
         public const int AxisYArrayDimension = 1;
 
-        private readonly IHexPositionToCellPositionConvertor _hexPositionToCellPositionConvertor;
+        private IHexPositionToCellPositionConvertor _hexPositionToCellPositionConvertor;
 
-        private T[,] _array;
+        private T[][] _array;
 
         public int SizeR => GetSize().R;
         public int SizeS => GetSize().S;
         public int SizeQ => GetSize().Q;
 
-        public int SizeX => _array.GetLength(AxisXArrayDimension);
-        public int SizeY => _array.GetLength(AxisYArrayDimension);
-      
+        public int SizeX
+        {
+            get
+            {
+                return _array.Length;
+            }
+        }
+
+        public int SizeY
+        {
+            get
+            {
+                if (SizeX == 0)
+                    return 0;
+
+                return _array[0].Length;
+            }
+        }
+
+        public HexArray(Vector2Int size, IHexPositionToCellPositionConvertor hexPositionToCellPositionConvetor)
+        {
+            Init(hexPositionToCellPositionConvetor.CellToHex(size), hexPositionToCellPositionConvetor);
+        }
 
         public HexArray(HexVectorInt size, IHexPositionToCellPositionConvertor hexPositionToCellPositionConvetor)
         {
-            _hexPositionToCellPositionConvertor = hexPositionToCellPositionConvetor;
-
-            Init(size);
+            Init(size, hexPositionToCellPositionConvetor);
         }
 
         public HexArray(int r, int s, int q, IHexPositionToCellPositionConvertor hexPositionToCellPositionConvetor)
         {
-            _hexPositionToCellPositionConvertor = hexPositionToCellPositionConvetor;
-
-            Init(new HexVectorInt(r, s, q));
+            Init(new HexVectorInt(r, s, q), hexPositionToCellPositionConvetor);
         }
 
         public void Set(HexVectorInt index, T value)
@@ -44,7 +60,7 @@ namespace Game.GameLogic
 
             var cellPosition = _hexPositionToCellPositionConvertor.HexToCell(index);
 
-            _array[cellPosition.x, cellPosition.y] = value;
+            _array[cellPosition.x][cellPosition.y] = value;
         }
 
         public T Get(HexVectorInt index)
@@ -54,7 +70,7 @@ namespace Game.GameLogic
 
             var cellPosition = _hexPositionToCellPositionConvertor.HexToCell(index);
 
-            return _array[cellPosition.x, cellPosition.y];
+            return _array[cellPosition.x][cellPosition.y];
         }
 
         public bool InBounds(int r, int s, int q)
@@ -71,16 +87,14 @@ namespace Game.GameLogic
 
         public IEnumerable<HexCell<T>> GetAllCells()
         {
-            for (int r = 0; r < SizeR; r++)
+            for (int x = 0; x < SizeX; x++)
             {
-                for (int s = 0; s < SizeS; s++)
+                for (int y = 0; y < SizeY; y++)
                 {
-                    for (int q = 0; q < SizeQ; q++)
-                    {
-                        HexVectorInt cellPosition = new HexVectorInt(r, s, q);
+                    var hexPosition = _hexPositionToCellPositionConvertor.CellToHex(new Vector2Int(x, y));
+                    var value = Get(hexPosition);
 
-                        yield return new HexCell<T>(cellPosition, Get(cellPosition));
-                    }
+                    yield return new HexCell<T>(hexPosition, value);
                 }
             }
         }
@@ -109,14 +123,23 @@ namespace Game.GameLogic
             return new IndexOutOfRangeException($"R: {vector.R}, S: {vector.S}, Q: {vector.Q}. Vector: {cellIndex}  \n  Size: R: {SizeR}, S: {SizeS}, Q: {SizeQ} X: {SizeX} Y: {SizeY}.");
         }
 
-        private void Init(HexVectorInt size)
+        private void Init(HexVectorInt size, IHexPositionToCellPositionConvertor hexPositionToCellPositionConvetor)
         {
+            _hexPositionToCellPositionConvertor = hexPositionToCellPositionConvetor;
+
+
             var vector2Size = _hexPositionToCellPositionConvertor.HexToCell(size);
 
             if (vector2Size.x < 0 || vector2Size.y < 0)
                 throw new ArgumentException();
 
-            _array = new T[vector2Size.x, vector2Size.y];
+
+            _array = new T[vector2Size.x][];
+
+            for(int x = 0; x < _array.Length; x++)
+            {
+                _array[x] = new T[vector2Size.y];
+            }
         }
     }
 
@@ -129,8 +152,10 @@ namespace Game.GameLogic
 
     public interface IReadOnlyHexArray<T>
     {
+        public T Get(HexVectorInt index);
+
         HexVectorInt GetSize();
 
-        public T Get(HexVectorInt index);
+        public IEnumerable<HexCell<T>> GetAllCells();
     }
 }

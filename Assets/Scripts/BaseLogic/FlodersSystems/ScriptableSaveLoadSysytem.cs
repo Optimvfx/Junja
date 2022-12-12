@@ -12,8 +12,15 @@ namespace Game.BaseLogic.FlodersSystems
             if (AssetDatabase.IsValidFolder($"{_basePatch}/{folderName}") == false)
                 AssetDatabase.CreateFolder($"{_basePatch}", folderName);
 
-            AssetDatabase.CreateAsset(scriptableObject, $"{_basePatch}/{folderName}/{name}.asset");
-            AssetDatabase.SaveAssets();
+            try
+            {
+                AssetDatabase.DeleteAsset($"{_basePatch}/{folderName}/{name}.asset");
+            }
+            finally
+            {
+                AssetDatabase.CreateAsset(scriptableObject, $"{_basePatch}/{folderName}/{name}.asset");
+                AssetDatabase.SaveAssets();
+            }
         }
     }
 }

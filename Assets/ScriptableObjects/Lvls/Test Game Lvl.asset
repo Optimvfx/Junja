@@ -13,3 +13,100 @@ MonoBehaviour:
   m_Name: Test Game Lvl
   m_EditorClassIdentifier: 
   _newLvlName: Test
+  _offsetToTilemap: {x: -2, y: -2}
+  _gameCells:
+  - _position:
+      _r: 0
+      _s: -1
+      _q: 1
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: -1
+      _s: -1
+      _q: 2
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: -1
+      _s: -2
+      _q: 3
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 1
+      _s: -1
+      _q: 0
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 1
+      _s: -2
+      _q: 1
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 0
+      _s: -2
+      _q: 2
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 0
+      _s: -3
+      _q: 3
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: -1
+      _s: -3
+      _q: 4
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 2
+      _s: -2
+      _q: 0
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 2
+      _s: -3
+      _q: 1
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 1
+      _s: -3
+      _q: 2
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 1
+      _s: -4
+      _q: 3
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 0
+      _s: -4
+      _q: 4
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 3
+      _s: -3
+      _q: 0
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 3
+      _s: -4
+      _q: 1
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 2
+      _s: -4
+      _q: 2
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 2
+      _s: -5
+      _q: 3
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 1
+      _s: -5
+      _q: 4
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
+  - _position:
+      _r: 3
+      _s: -5
+      _q: 2
+    _value: {fileID: 11400000, guid: 60cb5c5edfe1d7949bc98d595fc29cb8, type: 2}
